@@ -1,0 +1,35 @@
+{
+    "timeout": 10,
+    "source": {
+        "directories": [
+            "Classes"
+        ]
+    },
+    "logs": {
+        "text": "infection.log",
+        "summary" : "summary.log",
+        "perMutator": "per-mutator.md"
+    },
+    "mutators": {
+        "@arithmetic" : true,
+        "@boolean" : true,
+        "@function_signature": false,
+        "@cast" : true,
+        "@conditional_boundary": true,
+        "@conditional_negotiation" : true,
+        "@equal" : true,
+        "@identical" : true,
+        "@number" : true,
+        "@operator" : true,
+        "@regex" : true,
+        "@removal" : true,
+        "@return_value" : true,
+        "@sort" :true,
+        "@unwrap" : true,
+        "@zero_iteration":true
+    }, "phpUnit": {
+         "customPath": "/Users/Shashank/Documents/workspace/phpTest/phpunit-7.5.16.phar"
+     },
+     "testFramework":"phpunit",
+     "bootstrap":"autoload.php"
+}

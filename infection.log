@@ -1,0 +1,53 @@
+Escaped mutants:
+================
+
+
+1) /Users/Shashank/Documents/workspace/phpTest/Classes/MyClass.php:8    [M] GreaterThan
+
+--- Original
++++ New
+@@ @@
+ {
+     public function getGrade($val)
+     {
+-        if ($val > 90) {
++        if ($val >= 90) {
+             return 'A';
+         } else {
+             if ($val > 70) {
+
+
+2) /Users/Shashank/Documents/workspace/phpTest/Classes/MyClass.php:10    [M] GreaterThan
+
+--- Original
++++ New
+@@ @@
+         if ($val > 90) {
+             return 'A';
+         } else {
+-            if ($val > 70) {
++            if ($val >= 70) {
+                 return 'B';
+             } else {
+                 return 'C';
+
+
+3) /Users/Shashank/Documents/workspace/phpTest/Classes/MyClass.php:20    [M] GreaterThan
+
+--- Original
++++ New
+@@ @@
+     public function getValue($val)
+     {
+         $i = 1;
+-        if ($val > 10) {
++        if ($val >= 10) {
+             $i = 10;
+         }
+         return $i;
+     }
+Timed Out mutants:
+==================
+
+Not Covered mutants:
+====================
